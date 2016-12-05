@@ -1,3 +1,6 @@
 [ignore]
 .*/node_modules/.*/test/.*
 .*/node_modules/fbjs/.*
+
+[options]
+unsafe.enable_getters_and_setters=true
