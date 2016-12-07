@@ -1,12 +1,21 @@
+var FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
+
 module.exports = {
+    
+  plugins: [
+    new FlowStatusWebpackPlugin({failOnError: true})
+  ],
+  
   entry: [
     './src/index.js'
   ],
+  
   output: {
     path: __dirname,
     publicPath: '/',
     filename: 'bundle.js'
   },
+  
   module: {
     loaders: [{
       exclude: /node_modules/,
@@ -16,9 +25,11 @@ module.exports = {
       }
     }]
   },
+  
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
+  
   devServer: {
     historyApiFallback: true,
     contentBase: './'

@@ -2,47 +2,33 @@
 
 import React from 'react';
 import { Route, IndexRoute, Router, browserHistory } from 'react-router';
-import {Enum} from 'enumify';
 
+import Paths from './helpers/path_helper';
 import HomePage from './components/home_page';
 import IndexPage from './components/index_page';
-import ProfilePage from './components/profile_page';
+
+import ProfilesPage from './components/profiles_page';
 import CoursesPage from './components/courses_page';
 import AssignmentsPage from './components/assignments_page';
 
-// This guy gives us a nice and pretty enum for debugging purposes. We should probably just this into a helper file so other pages can import it to create links.
-class Path extends Enum {}
-Path.initEnum({
-    index: {
-        get path() { return '/'; },
-    },
+import ShowProfilePage from './components/show_profile_page';
+import ShowCoursePage from './components/show_course_page';
+import ShowAssignmentPage from './components/show_assignment_page';
 
-    home: {
-        get path() { return '/home'; },
-    },
-
-    profiles: {
-        get path() { return '/profiles'; },
-    },
-
-    courses: {
-        get path() { return '/courses'; },
-    },
-
-    assignments: {
-        get path() { return '/assignments'; },
-    },
-
-});
 
 export default(
     <Router history={ browserHistory } >
 
-        <Route path={ Path.index.path       }  component={ IndexPage } />
-        <Route path={ Path.home.path        }  component={ HomePage } />
-        <Route path={ Path.profiles.path    }  component={ ProfilePage } />
-        <Route path={ Path.courses.path     }  component={ CoursesPage } />
-        <Route path={ Path.assignments.path }  component={ AssignmentsPage } />
+        <Route path={ Paths.index.path            }  component={ IndexPage }       />
+        <Route path={ Paths.home.path             }  component={ HomePage }        />
+        <Route path={ Paths.profiles.path         }  component={ ProfilesPage }     />
+        <Route path={ Paths.show_profile.path     }  component={ ShowProfilePage }     />
+
+        <Route path={ Paths.courses.path          }  component={ CoursesPage }     />
+        <Route path={ Paths.show_course.path      }  component={ ShowCoursePage }  />
+
+        <Route path={ Paths.assignments.path      }  component={ AssignmentsPage } />
+        <Route path={ Paths.show_assignment.path  }  component={ ShowAssignmentPage } />
 
     </Router>
 );
