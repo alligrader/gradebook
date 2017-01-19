@@ -7,15 +7,29 @@ import { Link } from 'react-router';
 
 export default () => {
     return (
-        <div className="col-md-12">
-            <Navbar>
-                <Nav>
-                    <Col md={3}><Link to={ Paths.home.path }>Alligrader</Link></Col>
-                    <Col md={3}><Link to={ Paths.profiles.path }>Bug Profiles</Link></Col>
-                    <Col md={3}><Link to={ Paths.courses.path }>Courses</Link></Col>
-                    <Col md={3}><Link to={ Paths.assignments.path }>Assignments</Link></Col>
-                </Nav>
-            </Navbar>
+        <div>
+        <nav id="custom-bootstrap-menu" className="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div className="container">
+                    <div className="navbar-header">
+                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                            <span className="sr-only">Toggle navigation</span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                            <span className="icon-bar"></span>
+                        </button>
+                        <Link className="navbar-brand" to={ Paths.index.path }>ALLIGRADER</Link>
+
+                    </div>
+                    <div className="collapse navbar-collapse" id="collapse">
+                        <ul className="nav navbar-nav">
+                            <li><Link className="my-active" to={ Paths.home.path }>Home</Link></li>
+                            <li><Link to={ Paths.home.path }>About Us</Link></li>
+                            <li><Link to={ Paths.home.path }>Contact Us</Link></li>
+
+                        </ul>
+                    </div>
+                  </div>
+            </nav>
         </div>
     );
 };
