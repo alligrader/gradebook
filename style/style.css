@@ -48,6 +48,7 @@ nav{
 .my-active{
     border-bottom: 5px solid white;
     background-color: #5ab73e !important;
+    border-radius: 10px;
 
 }
 /* END HEADER */
@@ -59,6 +60,80 @@ nav{
 
 }
 /* END INDEX PAGE */
+
+/* ABOUT PAGE*/
+.about-content-1{
+  margin-top: 100px !important;
+  margin-bottom: 150px !important;
+
+}
+/* END ABOUT PAGE */
+
+/*CONTACT PAGE */
+
+/* LOGIN FORM */
+#login_form label {
+    cursor: pointer;
+    margin: 4px 0;
+    color: #2da30d;
+    display: block;
+}
+/* END LOGIN FORM */
+
+/* CONTACT FORM */
+
+#contact_form label {
+    cursor: pointer;
+    margin: 4px 0;
+    color: #2da30d;
+    display: block;
+}
+
+input {
+    display:block;
+    width:90%;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    background-color:#ffffff;
+    color:#000;
+    border:1px solid #5f5f5f;
+    padding:10px;
+    margin-bottom:25px;
+}
+
+textarea{
+    display: block;
+    width: 90%;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #5f5f5f;
+    padding: 10px;
+    margin-bottom: 25px;
+    resize: vertical;
+}
+
+input::-webkit-input-placeholder {
+    margin: 0;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 18.5714px;
+}
+
+input:-moz-placeholder {
+    margin: 0;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 18.5714px;
+}
+
+
+/*END CONTACT PAGE */
 /* FOOTER */
 
 footer{
@@ -98,6 +173,7 @@ footer{
 
 a.footerText:hover, a.footerText:active, a.footerText:visited, a.footerText:link{
     color: white;
+
 }
 
 #footDiv{
@@ -112,3 +188,9 @@ a.footerText:hover, a.footerText:active, a.footerText:visited, a.footerText:link
     list-style-type: none;
 }
 /* END FOOTER */
+
+/*GLOBAL STYLES*/
+.bold{
+    font-weight: bold;
+}
+/*END GLOBAL STYLES*/
