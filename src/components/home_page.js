@@ -79,24 +79,7 @@ class MyBugProfiles extends React.Component {
         );
     }
 }
-
-<<<<<<< HEAD
-var MyProjects = React.createClass({
-  render: function(){
-    return(
-      <div>
-        <br/>
-        Morbi eu ipsum eu tellus porta pellentesque. Quisque ligula magna, elementum id pellentesque posuere, imperdiet nec est.
-        Proin ac lacinia nunc. Morbi consectetur, erat sed efficitur ullamcorper, purus massa ultricies tellus, vel eleifend arcu lacus ac massa.
-        Ut a elit enim. Fusce lacus nibh, interdum eu tincidunt ut, facilisis quis orci.
-        Ut finibus semper pulvinar. Pellentesque placerat elementum lorem, bibendum viverra nulla lacinia sed.
-        Fusce feugiat facilisis feugiat. Aenean at vestibulum diam, quis pulvinar sem.
-        Donec at libero ut orci convallis tristique.
-      </div>
-    );
-  }
-});
-=======
+    
 class MyProjects extends React.Component {
     render(){
         return(
@@ -114,4 +97,3 @@ class MyProjects extends React.Component {
         );
     }
 }
->>>>>>> db39191... Placeholder info for Contact&About pages. Styling for both. Fixed Index styling
