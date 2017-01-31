@@ -23,8 +23,8 @@ export default () => {
                     <div className="collapse navbar-collapse" id="collapse">
                         <ul className="nav navbar-nav">
                             <li><Link className="my-active" to={ Paths.home.path }>Home</Link></li>
-                            <li><Link to={ Paths.home.path }>About Us</Link></li>
-                            <li><Link to={ Paths.home.path }>Contact Us</Link></li>
+                            <li><Link to={ Paths.about.path }>About Us</Link></li>
+                            <li><Link to={ Paths.contact.path }>Contact Us</Link></li>
 
                         </ul>
                     </div>
