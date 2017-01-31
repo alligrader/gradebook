@@ -5,6 +5,10 @@ import { Route, IndexRoute, Router, browserHistory } from 'react-router';
 
 import Paths from './helpers/path_helper';
 import HomePage from './components/home_page';
+import AboutPage from './components/about_page';
+import ContactPage from './components/contact_page';
+
+
 import IndexPage from './components/index_page';
 
 import ProfilesPage from './components/profiles_page';
@@ -21,6 +25,9 @@ export default(
 
         <Route path={ Paths.index.path            }  component={ IndexPage }       />
         <Route path={ Paths.home.path             }  component={ HomePage }        />
+        <Route path={ Paths.about.path             }  component={ AboutPage }        />
+        <Route path={ Paths.contact.path             }  component={ ContactPage }        />
+
         <Route path={ Paths.profiles.path         }  component={ ProfilesPage }     />
         <Route path={ Paths.show_profile.path     }  component={ ShowProfilePage }     />
 
