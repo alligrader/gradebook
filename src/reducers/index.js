@@ -1,9 +1,9 @@
 // @flow
-
 import { combineReducers } from 'redux';
+import ReposReducer from './reducer_repos';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
-});
+    repos: ReposReducer
+ });
 
 export default rootReducer;
