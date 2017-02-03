@@ -6,7 +6,7 @@ import Navbar from './navbar'
 import Footer from './footer'
 import { Link } from 'react-router';
 import { Tab, Tabs } from 'react-bootstrap';
-
+import RepoList from '../containers/repo-list';
 
 export default () => {
     return <HomePage/>
@@ -79,19 +79,14 @@ class MyBugProfiles extends React.Component {
         );
     }
 }
-    
+
 class MyProjects extends React.Component {
     render(){
         return(
             <div>
                 <br/>
                 <p>
-                    Morbi eu ipsum eu tellus porta pellentesque. Quisque ligula magna, elementum id pellentesque posuere, imperdiet nec est.
-                    Proin ac lacinia nunc. Morbi consectetur, erat sed efficitur ullamcorper, purus massa ultricies tellus, vel eleifend arcu lacus ac massa.
-                    Ut a elit enim. Fusce lacus nibh, interdum eu tincidunt ut, facilisis quis orci.
-                    Ut finibus semper pulvinar. Pellentesque placerat elementum lorem, bibendum viverra nulla lacinia sed.
-                    Fusce feugiat facilisis feugiat. Aenean at vestibulum diam, quis pulvinar sem.
-                    Donec at libero ut orci convallis tristique.
+                <RepoList />
                 </p>
             </div>
         );
