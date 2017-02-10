@@ -19,7 +19,6 @@ import ShowProfilePage from './components/show_profile_page';
 import ShowCoursePage from './components/show_course_page';
 import ShowAssignmentPage from './components/show_assignment_page';
 
-
 export default(
     <Router history={ browserHistory } >
 

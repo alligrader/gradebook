@@ -1,9 +1,9 @@
 // @flow
 import { combineReducers } from 'redux';
-import ReposReducer from './reducer_repos';
+import GetRepos from './reducer_repolist';
 
 const rootReducer = combineReducers({
-    repos: ReposReducer
+    repos: GetRepos,
  });
 
 export default rootReducer;

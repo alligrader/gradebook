@@ -6,7 +6,7 @@ import Navbar from './navbar'
 import Footer from './footer'
 import { Link } from 'react-router';
 import { Tab, Tabs } from 'react-bootstrap';
-import RepoList from '../containers/repo-list';
+import RepoList from '../containers/RepoList';
 
 export default () => {
     return <HomePage/>
@@ -85,9 +85,8 @@ class MyProjects extends React.Component {
         return(
             <div>
                 <br/>
-                <p>
-                <RepoList />
-                </p>
+                <RepoList/>
+
             </div>
         );
     }

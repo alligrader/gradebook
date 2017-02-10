@@ -47,4 +47,6 @@ Path.initEnum({
         get path() { return '/assignments/:id'; },
         slug: 'id',
     },
+
+
 });
