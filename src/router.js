@@ -8,14 +8,10 @@ import HomePage from './components/home_page';
 import AboutPage from './components/about_page';
 import ContactPage from './components/contact_page';
 
-
 import IndexPage from './components/index_page';
-import SignUpPage from './components/signup_page';
-
 import ProfilesPage from './components/profiles_page';
 import CoursesPage from './components/courses_page';
 import AssignmentsPage from './components/assignments_page';
-
 import ShowProfilePage from './components/show_profile_page';
 import ShowCoursePage from './components/show_course_page';
 import ShowAssignmentPage from './components/show_assignment_page';
@@ -25,7 +21,6 @@ export default(
     <Router history={ browserHistory } >
 
         <Route path={ Paths.index.path            }  component={ IndexPage }          />
-        <Route path={ Paths.sign_up.path          }  component={ SignUpPage }          />
         <Route path={ Paths.home.path             }  component={ HomePage }           />
         <Route path={ Paths.about.path            }  component={ AboutPage }          />
         <Route path={ Paths.contact.path          }  component={ ContactPage }        />

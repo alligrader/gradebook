@@ -6,6 +6,7 @@ import Navbar from './navbar'
 import Footer from './footer'
 import { Link } from 'react-router';
 
+import { SignupButton } from './signup_modal';
 
 export default () => {
     return <IndexPage/>
@@ -61,9 +62,8 @@ class SignInBox extends React.Component {
                         </label>
 
                         <label>
-                        <Link to={ Paths.sign_up.path }>Create an Account</Link>
+                            <SignupButton />
                         </label>
-
                     </form>
                 </div>
             </div>
