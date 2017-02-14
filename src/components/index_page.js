@@ -61,7 +61,7 @@ class SignInBox extends React.Component {
                         </label>
 
                         <label>
-                        <Link to={ Paths.home.index }>Create an Account</Link>
+                        <Link to={ Paths.sign_up.path }>Create an Account</Link>
                         </label>
 
                     </form>

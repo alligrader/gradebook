@@ -9,6 +9,10 @@ Path.initEnum({
         get path() { return '/'; },
     },
 
+    sign_up: {
+        get path() { return '/sign_up'; },
+    },
+
     home: {
         get path() { return '/home'; },
     },
