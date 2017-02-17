@@ -6,7 +6,8 @@
   "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js -p",
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start-dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "start": "node node_modules/webpack/bin/webpack.js -p && node node_modules/serve/bin/serve.js . --port 8080",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "test:watch": "npm run test -- --watch"
@@ -44,6 +45,7 @@
     "react-router-redux": "^4.0.8",
     "redux": "^3.0.4",
     "redux-auth": "0.0.5-beta5",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "serve": "^3.3.1"
   }
 }
