@@ -1,4 +1,2 @@
-FROM nginx
-COPY index.html /usr/share/nginx/html
-COPY bundle.js /usr/share/nginx/html
-COPY style /usr/share/nginx/html/style
+FROM node:7.5.0-onbuild
+EXPOSE 8080
