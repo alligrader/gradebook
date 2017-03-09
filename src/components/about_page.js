@@ -4,9 +4,10 @@ import React from 'react';
 import Navbar from './navbar'
 import Footer from './footer'
 
-export default () => {
+const about = () => {
     return <AboutPage/>
 };
+export default about;
 
 class AboutPage extends React.Component {
     render(){

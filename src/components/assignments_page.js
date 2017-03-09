@@ -5,7 +5,7 @@ import Navbar from './navbar'
 
 // This page shows all assignments available to the user.
 // On component mount, it will create an action to fetch the assignments for this particular user.
-export default () => {
+const assignments = () => {
     return (
         <div>
             <Navbar />
@@ -13,3 +13,5 @@ export default () => {
         </div>
     );
 };
+
+export default assignments;

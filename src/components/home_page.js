@@ -1,16 +1,16 @@
 // @flow
 
 import React from 'react';
-import Paths from '../helpers/path_helper';
 import Navbar from './navbar'
 import Footer from './footer'
-import { Link } from 'react-router';
 import { Tab, Tabs } from 'react-bootstrap';
 import RepoList from '../containers/repo-list';
 
-export default () => {
+const home = () => {
     return <HomePage/>
 };
+
+export default home;
 
 class HomePage extends React.Component {
     render(){

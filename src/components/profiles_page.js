@@ -3,7 +3,7 @@
 import React from 'react';
 import Navbar from './navbar'
 
-export default () => {
+const profilesPage = () => {
     return (
         <div>
             <Navbar />
@@ -11,3 +11,5 @@ export default () => {
        </div>
     );
 };
+
+export default profilesPage;

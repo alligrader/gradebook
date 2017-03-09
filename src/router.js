@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { Route, IndexRoute, Router, browserHistory } from 'react-router';
+import { Route, Router, browserHistory } from 'react-router';
 
 import Paths from './helpers/path_helper';
 import HomePage from './components/home_page';
