@@ -4,9 +4,11 @@ import React from 'react';
 import Navbar from './navbar'
 import Footer from './footer'
 
-export default () => {
+const contact = () => {
     return <ContactPage/>
 };
+
+export default contact;
 
 class ContactPage extends React.Component {
     render(){
@@ -43,7 +45,7 @@ class Content extends React.Component {
                                 <textarea placeholder="Please write me a message!" name="input" id="input"></textarea>
                             </label>
 
-                            <input class="sendButton" type="submit" name="myFormSubmitted" value="Send"/>
+                            <input className="sendButton" type="submit" name="myFormSubmitted" value="Send"/>
                         </form>
                     </div>
                     <div className="col-md-6">

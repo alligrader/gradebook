@@ -8,9 +8,11 @@ import { Link } from 'react-router';
 
 import { SignupButton } from './signup_modal';
 
-export default () => {
+const index = () => {
     return <IndexPage/>
 };
+
+export default index;
 
 class IndexPage extends React.Component {
     render(){
@@ -47,7 +49,7 @@ class SignInBox extends React.Component {
 
                         <label>
                             <span>Username:</span>
-                            <input type="username" name="username" id="username" required autofocus/>
+                            <input type="username" name="username" id="username" required autoFocus/>
                         </label>
 
                         <label>

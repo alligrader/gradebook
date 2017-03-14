@@ -24,6 +24,10 @@ class RepoList extends Component {
     }
 }
 
+RepoList.propTypes = {
+    repos: React.PropTypes.array
+};
+
 
 function mapStateToProps(state){
     // whatever is returned will show up as props will show up as props inside of RepoList
@@ -34,14 +38,11 @@ function mapStateToProps(state){
 
 //anything returned form this function will end up
 //as props on the repoList container
-
 function mapDispatchtoProps(dispatch){
     //whenever selectRepo is called, the result should be passed to all of our reducers
     return bindActionCreators({selectRepo: selectRepo}, dispatch)
 }
-function componentWillMount(){
 
-}
 // Promote repoList from a component to a container - it needs to know about this new dispatch
 //method, selectRepo. Make it available as a prop.
-export default connect(mapStateToProps)(RepoList);
+export default connect(mapStateToProps, mapDispatchtoProps)(RepoList);

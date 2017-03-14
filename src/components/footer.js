@@ -4,7 +4,7 @@ import React from 'react';
 import Paths from '../helpers/path_helper';
 import { Link } from 'react-router';
 
-export default () => {
+const footer = () => {
     return (
       <div>
         <footer className="container">
@@ -38,3 +38,5 @@ export default () => {
     </div>
     );
 };
+
+export default footer;

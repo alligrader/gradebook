@@ -5,7 +5,7 @@ import Navbar from './navbar'
 
 // This page shows all of the courses the user is teaching (or a student in).
 // On component mount, create an action to load all of the courses.
-export default () => {
+const courses = () => {
     return (
         <div>
             <Navbar />
@@ -13,3 +13,5 @@ export default () => {
         </div>
     );
 };
+
+export default courses;

@@ -1,11 +1,10 @@
 // @flow
 
 import React from 'react';
-import { Navbar, Nav, NavItem, Col } from 'react-bootstrap';
 import Paths from '../helpers/path_helper';
 import { Link } from 'react-router';
 
-export default () => {
+const navbar = () => {
     return (
         <div>
         <nav id="custom-bootstrap-menu" className="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -33,3 +32,5 @@ export default () => {
         </div>
     );
 };
+
+export default navbar;
