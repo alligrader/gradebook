@@ -2,11 +2,12 @@
 
 import React from 'react';
 import Paths from '../helpers/path_helper';
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import { Link } from 'react-router';
 
-import { SignupButton } from './signup_modal';
+import SignupButton from '../components/signup_modal';
+import LoginButton from '../components/signin_modal';
 
 export default () => {
     return <IndexPage/>
@@ -42,29 +43,8 @@ class SignInBox extends React.Component {
         return(
             <div className="col-md-4">
                 <div className="SignInBox well">
-                    <form name="login_form" id="login_form">
-                        <h2 className="text-center">User Login</h2>
-
-                        <label>
-                            <span>Username:</span>
-                            <input type="username" name="username" id="username" required autofocus/>
-                        </label>
-
-                        <label>
-                            <span>Password:</span>
-                            <input type="password" name="password" id="password" required/>
-                        </label>
-
-                        <label>
-                        <Link to={ Paths.home.path }>
-                            <button type="button" className="btn btn-success text-center">Login</button>
-                        </Link>
-                        </label>
-
-                        <label>
-                            <SignupButton />
-                        </label>
-                    </form>
+                    <SignupButton />
+                    <LoginButton  />
                 </div>
             </div>
         );
