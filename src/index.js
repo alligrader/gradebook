@@ -12,6 +12,13 @@ const reactRoot = document.querySelector('.container');
 store.dispatch(configure(
     {
         apiUrl: "http://localhost:8081/api",
+        emailRegistrationPath: "/user",
+        emailSignInPath:       "/user/login",
+        accountUpdatePath:     "/user/:userID",
+        accountDeletePath:     "/user/:userID/delete",
+        passwordResetPath:     "/user/:userID/password_reset",
+        passwordUpdatePath:    "/user/:userID/password_update",
+        signOutPath:           "/user/:userID/signout",
         authProviderPaths: {
             github: "/gh"
         }

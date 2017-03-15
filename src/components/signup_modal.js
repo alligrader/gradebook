@@ -1,10 +1,14 @@
 // @flow
 
 import React from 'react';
-import { OAuthSignInButton } from "redux-auth/bootstrap-theme";
+import { EmailSignUpForm } from "redux-auth/bootstrap-theme";
 import { Button, Modal } from 'react-bootstrap';
 
 let SignupModal = (props: { display: boolean, hide: () => void }) => {
+
+    const next = function() {
+
+    };
 
     return (
 
@@ -20,7 +24,7 @@ let SignupModal = (props: { display: boolean, hide: () => void }) => {
                     <Modal.Title>Sign Up</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <OAuthSignInButton provider="github"/>
+                    <EmailSignUpForm next={next} />
                 </ Modal.Body>
             </Modal>
         </div>
