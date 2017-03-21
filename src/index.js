@@ -23,12 +23,22 @@ store.dispatch(configure(
         }
     }));
 
+class App extends React.Component {
+    render() {
+        return (
+            <Provider store={store}>
+                <div>
+                  <AuthGlobals />
+                  { router }
+                </div>
+            </Provider>
+        );
+    }
+}
+
 ReactDOM.render(
-    <Provider store={store}>
-        <div>
-          <AuthGlobals />
-          { router }
-        </div>
-    </Provider>
+    <App />
     , reactRoot
 );
+
+export default App;
