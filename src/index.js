@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import reducers, { store } from './reducers';
+import { store } from './reducers';
 import router from './router'
 import { AuthGlobals } from "redux-auth/bootstrap-theme";
 import { configure } from "redux-auth";

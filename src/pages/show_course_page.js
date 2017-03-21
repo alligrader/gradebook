@@ -9,6 +9,7 @@ type T = {
     }
 };
 
-export default (props: T) => {
+const showCourse = (props: T ) => {
     return <div>The course is { props.params[Paths.show_course.slug] }.</div>
 };
+export default showCourse;

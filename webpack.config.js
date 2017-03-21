@@ -1,11 +1,10 @@
-var FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
+// var FlowStatusWebpackPlugin = require('flow-status-webpack-plugin');
+//  plugins: [
+//    new FlowStatusWebpackPlugin({failOnError: true})
+//  ],
 
 module.exports = {
     
-  plugins: [
-    new FlowStatusWebpackPlugin({failOnError: true})
-  ],
-  
   entry: [
     './src/index.js'
   ],
@@ -17,15 +16,20 @@ module.exports = {
   },
   
   module: {
+    preloaders: [],
     loaders: [{
       exclude: /node_modules/,
       loader: 'babel',
       query: {
         presets: ['react', 'es2015', 'stage-1']
       }
-    }]
+    }, { 
+        test: /\.jsx?$/,
+        loader: 'eslint', 
+        exclude: /node_modules/ 
+      }
+    ]
   },
-  
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
@@ -33,5 +37,9 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: './'
+  },
+  eslint: {
+      failOnWarning: false,
+      failOnError: true
   }
 };

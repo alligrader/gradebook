@@ -9,9 +9,11 @@ import { Link } from 'react-router';
 import SignupButton from '../components/signup_modal';
 import LoginButton from '../components/signin_modal';
 
-export default () => {
+const index = () => {
     return <IndexPage/>
 };
+
+export default index;
 
 class IndexPage extends React.Component {
     render(){
