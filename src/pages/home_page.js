@@ -1,9 +1,8 @@
 // @flow
 
 import React from 'react';
-import Paths from '../helpers/path_helper';
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 import { Tab, Tabs } from 'react-bootstrap';
 import RepoList from '../containers/repo-list';
 

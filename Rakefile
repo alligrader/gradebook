@@ -22,3 +22,8 @@ end
 task deploy: [] do
     sh "kubectl run gradebook --image=gcr.io/alligrader-15/gradebook:v0.0.2 --port=80"
 end
+
+task test: [] do
+    sh "docker-compose -f docker-compose.test.yml up -d"
+    sh "docker wait gradebook_sut_1"
+end

@@ -1,22 +1,19 @@
 // @flow
 
 import React from 'react';
-import Paths from '../helpers/path_helper';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import { Link } from 'react-router';
 
 import SignupButton from '../components/signup_modal';
 import LoginButton from '../components/signin_modal';
 
-const index = () => {
-    return <IndexPage/>
-};
-
-export default index;
-
 class IndexPage extends React.Component {
-    render(){
+
+    componentDidMount() {
+
+    }
+
+    render() {
         return(
             <div>
                 <Navbar />
@@ -70,3 +67,5 @@ class Info extends React.Component {
         );
     }
 }
+
+export default IndexPage;
