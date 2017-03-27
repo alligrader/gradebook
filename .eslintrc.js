@@ -9,7 +9,7 @@ module.exports = {
     "rules": {
         "flowtype-errors/show-errors": 2,
         "no-var": 2,
-		"no-console": 0
+	"no-console": 0
     },
     "plugins": [
         "react",
