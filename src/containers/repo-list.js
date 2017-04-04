@@ -4,11 +4,11 @@ import { selectRepo } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 class RepoList extends Component {
-    renderList(){
+    renderList() {
         return this.props.repos.map((repo) => {
             return (
                 <li key={repo.title} className="list-group-item">
-                {repo.title}
+                    {repo.title}
                 </li>
             );
         });
@@ -31,7 +31,7 @@ RepoList.propTypes = {
 
 function mapStateToProps(state){
     // whatever is returned will show up as props will show up as props inside of RepoList
-    return{
+    return {
         repos: state.repos
     };
 }
@@ -40,7 +40,7 @@ function mapStateToProps(state){
 //as props on the repoList container
 function mapDispatchtoProps(dispatch){
     //whenever selectRepo is called, the result should be passed to all of our reducers
-    return bindActionCreators({selectRepo: selectRepo}, dispatch)
+    return bindActionCreators({selectRepo, dispatch}, dispatch)
 }
 
 // Promote repoList from a component to a container - it needs to know about this new dispatch
