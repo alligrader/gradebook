@@ -1,14 +1,33 @@
+/* @flow */
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { selectRepo } from '../actions/index';
+import selectRepo from '../actions/index';
 import { bindActionCreators } from 'redux';
+import GetRepos from '../actions/repos';
+
+type Repo = any
+
+type Props = {
+    repos: [Repo],
+    dispatch: any
+}
 
 class RepoList extends Component {
+
+    constructor(props) {
+        super(props);
+        this.getUser = this._getUser.bind(this);
+    }
+
+    props: Props;
+    getUser: () => string
+
     renderList() {
         return this.props.repos.map((repo) => {
             return (
-                <li key={repo.title} className="list-group-item">
-                    {repo.title}
+                <li key={repo.key} className="list-group-item">
+                    {repo.full_name}
                 </li>
             );
         });
@@ -22,6 +41,20 @@ class RepoList extends Component {
             </ul>
         )
     }
+
+    // TODO get this value from the state
+    _getUser() {
+        return "RobbieMcKinstry"
+    }
+
+    componentWillMount() {
+        // Get the current user
+        // Call the action creater
+        // Dispatch the action
+        const user = this.getUser();
+        const action = GetRepos(user);
+        this.props.dispatch(action);
+    }
 }
 
 RepoList.propTypes = {
@@ -29,7 +62,7 @@ RepoList.propTypes = {
 };
 
 
-function mapStateToProps(state){
+function mapStateToProps(state) {
     // whatever is returned will show up as props will show up as props inside of RepoList
     return {
         repos: state.repos

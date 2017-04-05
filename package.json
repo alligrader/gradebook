@@ -45,6 +45,7 @@
     "axios": "^0.15.3",
     "babel-preset-stage-1": "^6.1.18",
     "enumify": "^1.0.4",
+    "immutable": "^3.8.1",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-bootstrap": "^0.30.7",
@@ -55,6 +56,7 @@
     "react-router-redux": "^4.0.8",
     "redux": "^3.0.4",
     "redux-auth": "0.0.5-beta5",
+    "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
     "serve": "^3.3.1"
   }
