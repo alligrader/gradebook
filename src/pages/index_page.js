@@ -154,10 +154,16 @@ class About extends React.Component{
 class Contact extends React.Component{
     render() {
         return(
-            <div className="container index-content-1">
+            <div id="contact" className="container">
                 <div className="row">
 
-                    <div className="well col-md-6">
+                    <div className="col-lg-12">
+                        <hr/>
+                        <h1>Contact Us:</h1>
+                        <hr/>
+                    </div>
+
+                    <div className="col-lg-6 offset-lg-3 card">
                         <h1>Check us out elsewhere:</h1>
                         <h3>Twitter:</h3>
                         <p>Robbie McKinstry - @twitter_handle</p>
