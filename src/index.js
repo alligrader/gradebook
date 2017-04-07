@@ -6,7 +6,7 @@ import router from './router'
 import { AuthGlobals } from "redux-auth/bootstrap-theme";
 import { configure } from "redux-auth";
 
-const reactRoot = document.querySelector('.container');
+const reactRoot = document.querySelector('#app-root');
 
 store.dispatch(configure(
     {
