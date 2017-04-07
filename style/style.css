@@ -1,196 +1,113 @@
-/* HEADER */
-.navbar{
-    position: fixed;
-    background: #2da30d !important;
-    padding-top: 20px;
+body{
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cmVjdCB3aWR0aD0iOCIgaGVpZ2h0PSI4IiBmaWxsPSIjNDAzYzNmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDBMOCA4Wk04IDBMMCA4WiIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiMxZTI5MmQiPjwvcGF0aD4KPC9zdmc+");
 }
 
-nav{
-    border-radius: 0 !important;
+/* NAV BAR */
 
-    color: white !important;
+.navbar {
+    font-size: 16px;
+    background-color: rgba(102, 18, 31, 1);
+    background: -webkit-linear-gradient(top, #449D44 0%, #387c38 100%);
+    background: linear-gradient(to bottom, #449D44 0%, #387c38 100%);
+    border-bottom-width: 0px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.navbar-nav{
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    white-space: nowrap;
+#hoverable:hover{
+    text-decoration: underline !important;
+}
+
+.nav-link{
     color: white !important;
-    padding-top: 25px;
 }
 
 .navbar-brand{
-    font-size: 50vw !important;
-    font-size: 50px !important;
+    font-size: 2em;
     color: white !important;
 }
-@media only screen and (max-width: 500px) {
 
-  .navbar-brand{
-    font-size: 15vw;
-    font-size: 15px;
-    color: white !important;
+.active{
+    text-decoration: underline !important;
 }
-}
+/* END NAV BAR */
 
 
- .navbar-nav a{
-         color: white !important;
-
- }
-
-  .navbar-nav a:hover{
-         color: black !important;
-
- }
-
-
-.my-active{
-    border-bottom: 5px solid white;
-    background-color: #5ab73e !important;
-    border-radius: 10px;
-
-}
-/* END HEADER */
-
-/* INDEX PAGE*/
-.index-content-1{
-  margin-top: 150px !important;
-  margin-bottom: 50px;
-
-}
-/* END INDEX PAGE */
-
-/* ABOUT PAGE*/
-.about-content-1{
-  margin-top: 100px !important;
-  margin-bottom: 150px !important;
-
-}
-/* END ABOUT PAGE */
-
-/*CONTACT PAGE */
-
-/* LOGIN FORM */
-#login_form label {
-    cursor: pointer;
-    margin: 4px 0;
-    color: #2da30d;
-    display: block;
-}
-/* END LOGIN FORM */
-
-/* CONTACT FORM */
-
-#contact_form label {
-    cursor: pointer;
-    margin: 4px 0;
-    color: #2da30d;
-    display: block;
+.home-buttons{
+    margin-top: 10px;
+    width: 125px;
+    text-align: center;
 }
 
-input {
-    display:block;
-    width:90%;
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    -moz-border-radius:4px;
-    background-color:#ffffff;
-    color:#000;
-    border:1px solid #5f5f5f;
-    padding:10px;
-    margin-bottom:25px;
+.btn-oldstyle {
+  background-color: #449D44;
+  border-color: #449D44;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #3e8f3e;
+  background-image: -moz-linear-gradient(top,#449D44,#357935);
+  background-image: -webkit-linear-gradient(top,#449D44,#357935);
+  background-image: -o-linear-gradient(top,#449D44,#357935);
+  background-image: linear-gradient(to bottom,#449D44,#357935);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff449d44', endColorstr='#ff347934', GradientType=0);
+  border-color: #357935 #357935 #1d441d;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.btn-oldstyle:hover,
+.btn-oldstyle:focus {
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position .1s linear;
+  -moz-transition: background-position .1s linear;
+  -o-transition: background-position .1s linear;
+  transition: background-position .1s linear;
 }
 
-textarea{
-    display: block;
-    width: 90%;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    background-color: #ffffff;
-    color: #000;
-    border: 1px solid #5f5f5f;
-    padding: 10px;
-    margin-bottom: 25px;
-    resize: vertical;
+.btn-oldstyle:hover,
+.btn-oldstyle:focus {
+  background-color: #357935;
+}
+.btn-oldstyle:active,
+.btn-oldstyle.active,
+.btn-oldstyle.active:hover {
+  background-color: #3c8b3c;
+  border-color: #357935;
+}
+.btn-oldstyle.disabled:hover,
+.btn-oldstyle.disabled:focus,
+.btn-oldstyle.disabled:active,
+.btn-oldstyle.disabled.active,
+.btn-oldstyle[disabled] .btn-oldstyle:hover,
+.btn-oldstyle[disabled] .btn-oldstyle:focus,
+.btn-oldstyle[disabled] .btn-oldstyle:active,
+.btn-oldstyle[disabled] .btn-oldstyle.active {
+  background-color: #449D44;
+  border-color: #449D44;
 }
 
-input::-webkit-input-placeholder {
-    margin: 0;
-	font-size: 13px;
-	font-style: normal;
-	font-variant: normal;
-	line-height: 18.5714px;
+.fa{
+    color:  #449D44;
 }
-
-input:-moz-placeholder {
-    margin: 0;
-	font-size: 13px;
-	font-style: normal;
-	font-variant: normal;
-	line-height: 18.5714px;
-}
-
-
-/*END CONTACT PAGE */
-/* FOOTER */
 
 footer{
-    clear: both !important;
-    z-index: 10 !important;
-  	background:#2DA30D !important;
-  	color: white !important;
-  	width:100% !important;
-    text-align: center !important;
-    line-height: 15px !important;
-    padding: 15px !important;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    }
-
-}
-
-.footHeader{
-    font-weight: bold;
-    text-decoration: underline;
-    font-size: 1.2em;
-}
-
-
-.vert{
-    border-right: 1px solid white;
-
-}
-
-.footerText{
-  margin-top: 30px;
-  text-align: center;
-  letter-spacing: 1px;
-}
-
-a.footerText:hover, a.footerText:active, a.footerText:visited, a.footerText:link{
+    margin-top: 30px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 16px;
+    background-color: #efefef;
+    text-align: center;
+    background-color: rgba(102, 18, 31, 1);
+    background: -webkit-linear-gradient(top, #449D44 0%, #387c38 100%);
+    background: linear-gradient(to bottom, #449D44 0%, #387c38 100%);
     color: white;
-
+    border-radius: 5px;
+    clear: both;
+    bottom: 0;
+    margin-bottom: -10px;
 }
 
-#footDiv{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)";       /* IE 8 */
-    filter: alpha(opacity=25);  /* IE 5-7 */
-    -moz-opacity: 0.25;          /* Netscape */
-    -khtml-opacity: 0.25;        /* Safari 1.x */
-    opacity: 0.25;               /* Good browsers */
+#card-push{
+    margin-top: 70px;
 }
-
-.vert ul, li{
-    list-style-type: none;
-}
-/* END FOOTER */
-
-/*GLOBAL STYLES*/
-.bold{
-    font-weight: bold;
-}
-/*END GLOBAL STYLES*/

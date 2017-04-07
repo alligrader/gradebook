@@ -91,8 +91,9 @@ class MyProjects extends React.Component {
     render(){
         return(
             <div>
-                <br/>
+            <ul>
                 <RepoList />
+            </ul>
             </div>
         );
     }

@@ -1,26 +1,26 @@
 // @flow
 
 import React from 'react';
-import SignUpForm from './signup_form';
 import { Button, Modal } from 'react-bootstrap';
+import LoginForm from './login_form';
 
-let SignupModal = (props: { display: boolean, hide: () => void }) => {
+let LoginModal = (props: { display: boolean, hide: () => void }) => {
 
     return (
         <div>
             <Modal show={props.display} onHide={props.hide}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Sign Up</Modal.Title>
+                    <Modal.Title>Log In</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <SignUpForm />
-                </Modal.Body>
+                    <LoginForm />
+                </ Modal.Body>
             </Modal>
         </div>
     );
 };
 
-export default class SignupButton extends React.Component {
+export default class LogInButton extends React.Component {
 
     constructor(props: {}) {
         super(props);
@@ -40,8 +40,8 @@ export default class SignupButton extends React.Component {
     render() {
         return (
             <div>
-                <Button className="home-buttons btn-oldstyle" onClick={this.open} > Sign Up </Button>
-                <SignupModal display={this.state.display} hide={this.close}/>
+                <Button className="home-buttons btn-oldstyle" onClick={this.open} > Log In </Button>
+                <LoginModal display={this.state.display} hide={this.close}/>
             </div>
         );
     }
