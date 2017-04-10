@@ -4,13 +4,13 @@ import React from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import LoginForm from './login_form';
 
-let SignInModal = (props: { display: boolean, hide: () => void }) => {
+let LoginModal = (props: { display: boolean, hide: () => void }) => {
 
     return (
-        <div> 
+        <div>
             <Modal show={props.display} onHide={props.hide}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Sign In</Modal.Title>
+                    <Modal.Title>Log In</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <LoginForm />
@@ -20,7 +20,7 @@ let SignInModal = (props: { display: boolean, hide: () => void }) => {
     );
 };
 
-export default class SignInButton extends React.Component {
+export default class LogInButton extends React.Component {
 
     constructor(props: {}) {
         super(props);
@@ -40,8 +40,8 @@ export default class SignInButton extends React.Component {
     render() {
         return (
             <div>
-                <Button bsStyle="primary" bsSize="large" onClick={this.open} > Log In </Button>
-                <SignInModal display={this.state.display} hide={this.close}/>
+                <Button className="home-buttons btn-oldstyle" onClick={this.open} > Log In </Button>
+                <LoginModal display={this.state.display} hide={this.close}/>
             </div>
         );
     }

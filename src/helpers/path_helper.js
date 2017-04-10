@@ -13,12 +13,8 @@ Path.initEnum({
         get path() { return '/home'; },
     },
 
-    about: {
-        get path() { return '/about'; },
-    },
-
-    contact: {
-        get path() { return '/contact'; },
+    create_account:{
+        get path() {return '/create_account'},
     },
 
     profiles: {

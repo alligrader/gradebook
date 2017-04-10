@@ -6,9 +6,8 @@ import { Button, Modal } from 'react-bootstrap';
 
 let SignupModal = (props: { display: boolean, hide: () => void }) => {
 
-    // TODO currently using the login form for the sign-up form
     return (
-        <div> 
+        <div>
             <Modal show={props.display} onHide={props.hide}>
                 <Modal.Header closeButton>
                     <Modal.Title>Sign Up</Modal.Title>
@@ -41,7 +40,7 @@ export default class SignupButton extends React.Component {
     render() {
         return (
             <div>
-                <Button bsStyle="primary" bsSize="large" onClick={this.open} > Sign Up </Button>
+                <Button className="home-buttons btn-oldstyle" onClick={this.open} > Sign Up </Button>
                 <SignupModal display={this.state.display} hide={this.close}/>
             </div>
         );

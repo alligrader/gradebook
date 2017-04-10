@@ -64,14 +64,15 @@ class LoginForm extends React.Component {
                 <FormControl
                     type="text"
                     value={this.state.email}
-                    placeholder="robbie@alligrader.io"
+                    placeholder="Email Address..."
                     onChange={this.handleEmailChange}
+
                 />
                 <ControlLabel>Password</ControlLabel>
                 <FormControl
                     type="password"
                     value={this.state.password}
-                    placeholder="foobar"
+                    placeholder="Password..."
                     onChange={this.handlePasswordChange}
                 />
                 <FormControl.Feedback />

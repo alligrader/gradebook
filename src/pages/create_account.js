@@ -5,9 +5,7 @@ import { ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
 import Paths from '../helpers/path_helper';
 import { Link } from 'react-router';
 
-
-class LoginForm extends React.Component {
-
+class CreateAccount extends React.Component {
     state: {
         first_name: string,
         last_name: string,
@@ -138,7 +136,6 @@ class LoginForm extends React.Component {
     // Validation
     val() {
     }
-
 }
 
-export default LoginForm;
+export default CreateAccount;
