@@ -7,7 +7,7 @@
   "scripts": {
     "build": "node ./node_modules/webpack/bin/webpack.js -p",
     "start-dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "start": "node node_modules/webpack/bin/webpack.js -p && node node_modules/serve/bin/serve.js . --port 8080",
+    "start": "node node_modules/webpack/bin/webpack.js -p && node node_modules/serve/bin/serve.js . --port 0.0.0.0:8080",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "flow": "flow; test $? -eq 0 -o $? -eq 2",
     "test:watch": "npm run test -- --watch",
@@ -58,6 +58,6 @@
     "redux-auth": "0.0.5-beta5",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
-    "serve": "^3.3.1"
+    "serve": "^5.0.4"
   }
 }
