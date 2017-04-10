@@ -7,9 +7,9 @@ import Paths from '../helpers/path_helper';
 import { Link } from 'react-router';
 
 class IndexPage extends React.Component{
-    componentWillMount(){
+    componentWillMount(){}
+    componentDidMount() {}
 
-    }
     render() {
             return(
                     <div>
