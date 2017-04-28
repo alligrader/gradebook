@@ -1,25 +1,27 @@
+This repo has the front end code for Alligrader. 
+
 ###Getting Started###
-First, you will need to install Node.js < https://nodejs.org/en/download/ >.
 
-Then, there are two methods for getting started with this repo.
+To get started, you will need to install Node.js < https://nodejs.org/en/download/ >.
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
+Next you will need to clone the repository. 
 
 ```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
+	> git clone git@github.com/alligrader/gradebook.git
 ```
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+After that, you will need to install all of the node modules using the following command in ~/gradebook/ directory:
 
 ```
 	> npm install
-	> npm start
 ```
-=======
-# gradebook
-Web application for signing up, viewing classes, and managing resources
+
+###Running The Front End###
+
+In the command line, after you have installed the node modules, to start the front end:
+
+```
+	> npm run-script start-dev
+```
+
+The website will be hosted on http://localhost:8080
