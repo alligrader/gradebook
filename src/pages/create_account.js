@@ -4,6 +4,8 @@ import React from 'react';
 import { ControlLabel, FormControl, FormGroup } from 'react-bootstrap';
 import Paths from '../helpers/path_helper';
 import { Link } from 'react-router';
+import Navbar from '../components/navbar';
+import Footer from '../components/footer';
 
 class CreateAccount extends React.Component {
     state: {
@@ -47,13 +49,22 @@ class CreateAccount extends React.Component {
     render() {
         return (
             <div>
-                <form>
-                    { this.renderFormGroup() }
-                </form>
+            <Navbar />
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 offset-lg-3 card">
+                            <form>
+                                { this.renderFormGroup() }
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            <Footer />
             </div>
         );
 
     }
+
 
     firstNameChange(e: Event) {
         if (e.target instanceof HTMLInputElement) {
@@ -118,7 +129,8 @@ class CreateAccount extends React.Component {
                     placeholder="Password..."
                     onChange={this.handlePasswordChange}
                 />
-                <ControlLabel>Password Again</ControlLabel>
+
+                <ControlLabel>Repeat Password</ControlLabel>
                 <FormControl
                     type="password"
                     value={this.state.password}
@@ -126,6 +138,7 @@ class CreateAccount extends React.Component {
                     onChange={this.handlePasswordCopyChange}
                 />
                 <FormControl.Feedback />
+                <br/>
                 <Link className="btn btn-success btn-md" id="hoverable" to={ Paths.home.path }> Sign Up</Link>
 
             </div>

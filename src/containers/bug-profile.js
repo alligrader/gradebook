@@ -2,7 +2,6 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import selectRepo from '../actions/index';
 import { bindActionCreators } from 'redux';
 import GetStyleProps from '../actions/style_props';
 
@@ -25,7 +24,7 @@ class BugProfile extends Component {
         return this.props.style_props.map((style_pros) => {
             return (
                 <li key={style_pros.key} className="list-group-item">
-                    {style_pros.definitions.Checkstyle.properties}
+                    {style_pros.full_name}
                 </li>
             );
         });
@@ -56,7 +55,7 @@ BugProfile.propTypes = {
 function mapStateToProps(state) {
     // whatever is returned will show up as props will show up as props inside of RepoList
     return {
-        style_props: state.repos
+        style_props: state.style_props
     };
 }
 
@@ -64,7 +63,7 @@ function mapStateToProps(state) {
 //as props on the repoList container
 function mapDispatchtoProps(dispatch){
     //whenever selectRepo is called, the result should be passed to all of our reducers
-    return bindActionCreators({selectRepo, dispatch}, dispatch)
+    return bindActionCreators({GetStyleProps, dispatch}, dispatch)
 }
 
 // Promote repoList from a component to a container - it needs to know about this new dispatch

@@ -1,5 +1,7 @@
 // @flow
 import React from 'react';
+import Paths from '../helpers/path_helper';
+import { Link } from 'react-router';
 
 class Navbar extends React.Component{
     state: {
@@ -34,7 +36,7 @@ class Navbar extends React.Component{
     render(){
         return(
             <div>
-                <nav className="navbar navbar-toggleable-lg navbar-fixed-top navbar-light bg-faded">
+                <nav className="navbar navbar-fixed-top navbar-toggleable-lg navbar-light bg-faded">
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -59,7 +61,7 @@ class Navbar extends React.Component{
                         <form className="form-inline my-2 my-lg-0">
                             <input className="form-control mr-sm-2" type="email"    placeholder="E-Mail..." value={this.state.email} onChange={this.handleEmailChange}/>
                             <input className="form-control mr-sm-2" type="password" placeholder="Password... " value={this.state.password} onChange={this.handlePasswordChange}/>
-                            <button className="btn btn-outline-success btn-oldstyle my-2 my-sm-0" type="submit">Log In</button>
+                            <Link className="btn btn-outline-success btn-oldstyle my-2 my-sm-0" to={ Paths.home.path }>Log In</Link>
                         </form>
                     </div>
                 </nav>
