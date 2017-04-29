@@ -13,6 +13,14 @@ Path.initEnum({
         get path() { return '/home'; },
     },
 
+    my_projects: {
+        get path() { return '/my_projects'; },
+    },
+
+    bug_profiles: {
+        get path() { return '/bug_profiles'; },
+    },
+
     create_account:{
         get path() {return '/create_account'},
     },

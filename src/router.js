@@ -15,6 +15,8 @@ import ShowProfile from './pages/show_profile_page';
 import ShowCourse from './pages/show_course_page';
 import ShowAssignment from './pages/show_assignment_page';
 import CreateAccount from './pages/create_account';
+import MyProjects from './pages/my_projects';
+import BugProfiles from './pages/bug_profiles';
 
 export default(
     <Router history={ browserHistory } >
@@ -22,6 +24,10 @@ export default(
         <Route path={ Paths.index.path            }  component={ Index }          />
         <Route path={ Paths.home.path             }  component={ Home }           />
         <Route path={ Paths.create_account.path   }  component={ CreateAccount }  />
+
+
+        <Route path={ Paths.my_projects.path         }  component={ MyProjects }       />
+        <Route path={ Paths.bug_profiles.path     }  component={ BugProfiles }    />
 
         <Route path={ Paths.profiles.path         }  component={ Profiles }       />
         <Route path={ Paths.show_profile.path     }  component={ ShowProfile }    />

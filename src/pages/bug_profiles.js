@@ -3,15 +3,9 @@
 import React from 'react';
 import InternalNavbar from '../components/internal_navbar';
 import Footer from '../components/footer';
+import BugProfile from '../containers/bug-profile';
 
-
-const home = () => {
-    return <HomePage/>
-};
-
-export default home;
-
-class HomePage extends React.Component {
+class BugProfiles extends React.Component {
     render(){
         return(
             <div>
@@ -26,11 +20,12 @@ class HomePage extends React.Component {
 class Content extends React.Component {
     render(){
         return(
-            <div>
-                <div className="jumbotron">
-                    <h1> Welcome To Alligrader! </h1>
-                </div>
+            <div className="container index-content-1">
+            <BugProfile />
+
             </div>
         );
     }
 }
+
+export default BugProfiles;

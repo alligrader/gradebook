@@ -3,7 +3,6 @@
 import Immutable from 'immutable';
 
 export default function(_state = [], action){
-
     switch(action.type) {
     case 'REPOS_REQ': {
         const repos = Immutable.List(action.payload.data);
